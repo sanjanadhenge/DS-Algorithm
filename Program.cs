@@ -76,6 +76,10 @@ namespace DS_Algorithm
                         }
                         break;
                     case 9:
+                        CustomizeMessage customizeMessage = new CustomizeMessage();
+                        customizeMessage.Customize();
+                        break;
+                    case 10:
                         flag = false;
                         break;
                     
