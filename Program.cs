@@ -49,7 +49,7 @@ namespace DS_Algorithm
                         bool flag1 = true;
                         while (flag1)
                         {
-                            Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Anagram \n 6.Prime numbers \n 7.Prime Number check \n 8.Exit");
+                            Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Exit");
                             int option1 = Convert.ToInt32(Console.ReadLine());
                             switch (option1)
                             {
@@ -80,6 +80,10 @@ namespace DS_Algorithm
                         customizeMessage.Customize();
                         break;
                     case 10:
+                        LinkedListOperation linkedListOperation = new LinkedListOperation();    
+                        linkedListOperation.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile1.txt");
+                        break;
+                    case 11:
                         flag = false;
                         break;
                     
