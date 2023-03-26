@@ -13,7 +13,7 @@ namespace DS_Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Exit");
+                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -30,6 +30,10 @@ namespace DS_Algorithm
                         bubbleSort.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile2.txt");
                         break;
                     case 4:
+                        MergeSort mergeSort = new MergeSort();
+                        mergeSort.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile2.txt");
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
