@@ -13,7 +13,7 @@ namespace DS_Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Anagram \n 6.Exit");
+                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Anagram \n 6.Prime numbers \n 7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -38,6 +38,10 @@ namespace DS_Algorithm
                         anagram.CheckAnagram();
                         break;
                     case 6:
+                        PrimeNumbers primeNumbers = new PrimeNumbers();
+                        primeNumbers.PrintPrime();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                     
