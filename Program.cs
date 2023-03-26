@@ -13,7 +13,7 @@ namespace DS_Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select option \n 1.Binary Search \n 2.Exit");
+                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -22,6 +22,10 @@ namespace DS_Algorithm
                         binarySearch.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile1.txt");
                         break;
                     case 2:
+                        InsertionSort insertionSort = new InsertionSort();
+                        insertionSort.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile1.txt");
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
