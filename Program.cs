@@ -46,6 +46,36 @@ namespace DS_Algorithm
                         primeNumberCheck.GetPrime();
                         break;
                     case 8:
+                        bool flag1 = true;
+                        while (flag1)
+                        {
+                            Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Anagram \n 6.Prime numbers \n 7.Prime Number check \n 8.Exit");
+                            int option1 = Convert.ToInt32(Console.ReadLine());
+                            switch (option1)
+                            {
+                                case 1:
+                                    BinarySearchGeneric<string> binarySearchGeneric1 = new BinarySearchGeneric<string>();
+                                    binarySearchGeneric1.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile1.txt");
+                                    break;
+                                case 2:
+                                    InsertionSortGeneric<string> insertionSortGeneric = new InsertionSortGeneric<string>();
+                                    insertionSortGeneric.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile1.txt");
+                                    break;
+                                case 3:
+                                    BubbleSortGeneric<int> bubbleSortGeneric = new BubbleSortGeneric<int>();
+                                    bubbleSortGeneric.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile2.txt");
+                                    break;
+                                case 4:
+                                    MergesortGeneric<int> mergesortGeneric = new MergesortGeneric<int>();
+                                    mergesortGeneric.ReadFile(@"C:\Users\SOURABH\Desktop\Day 3\DS-Algorithm\TextFile2.txt");
+                                    break;
+                                case 5:
+                                    flag1 = false;
+                                    break;
+                            }
+                        }
+                        break;
+                    case 9:
                         flag = false;
                         break;
                     
