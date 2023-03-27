@@ -13,7 +13,7 @@ namespace DS_Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Anagram \n 6.Prime numbers \n 7.Prime Number check \n 8.Algorithms using sorting \n 9.CustomizeMessage \n 10.linkedList Operation \n 11. Ordered List \n 12.BalancedParentheses \n 13.Bank Cash Operation \n 14.Palindrome Checker \n 15.Hash Function \n 16.Prime number with 2D Array \n 17.Anagram 2D Array \n 18.PrimeAnagramStack \n 19.PrimeAnagramQueue \n 20.Exit");
+                Console.WriteLine("Select option \n 1.Binary Search \n 2.Insertion Sort \n 3.Bubble Sort \n 4.Merge Sort \n 5.Anagram \n 6.Prime numbers \n 7.Prime Number check \n 8.Algorithms using sorting \n 9.CustomizeMessage \n 10.linkedList Operation \n 11. Ordered List \n 12.BalancedParentheses \n 13.Bank Cash Operation \n 14.Palindrome Checker \n 15.Hash Function \n 16.Prime number with 2D Array \n 17.Anagram 2D Array \n 18.PrimeAnagramStack \n 19.PrimeAnagramQueue \n 20.Calendar \n 21.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -122,6 +122,10 @@ namespace DS_Algorithm
                         queueAnagram.GetPrime();
                         break;
                     case 20:
+                        Calendar calendar = new Calendar();
+                        calendar.Run();
+                        break;
+                    case 21:
                         flag = false;
                         break;
                     
