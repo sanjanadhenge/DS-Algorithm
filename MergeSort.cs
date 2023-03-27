@@ -44,16 +44,16 @@ namespace DS_Algorithm
             int n2 = end-mid;
             int [] a = new int[n1];
             int[] b= new int[n2];
-           // Console.WriteLine(n2 + "*******************************");
+           
             for( i=0; i<n1; i++)
             {
                 a[i] = arr[start+i];
-                //Console.WriteLine(a[i]+"AAAAAAAAAAAAAAAAAAAAAAAAAAA");
+               
             }
             for ( j = 0; j <n2; j++)
             {
                 b[j] = arr[mid+1+j];
-                //Console.WriteLine(b[j] + "BBBBBBBBBBBBBBBBBBBBBBBb");
+                
             }
             i = 0;
             j = 0;
